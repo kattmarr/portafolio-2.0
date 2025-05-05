@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Katt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 15px 30px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #00ffcc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff00ff;
+        }
+
+        header {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(15,15,15,0.9)), 
+                        url('fotoPortafolio.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #00ffcc;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 15px auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .botones a {
+            background: transparent;
+            border: 2px solid #00ffcc;
+            color: #00ffcc;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .botones a:hover {
+            background-color: #00ffcc;
+            color: #0f0f0f;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .certificados img {
+            width: 200px;
+            margin: 10px;
+            border: 2px solid #00ffcc;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .certificados img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <header id="inicio">
+        <h1>¡Hola, soy Katt! 👩🏻‍💻</h1>
+        <p>Estudiante de Ingeniería Informática, gamer de alma y apasionada por el desarrollo web. Me gusta crear sitios con onda, funcionales y llenos de estilo.</p>
+        <div class="botones">
+            <a href="#contacto">Hablemos</a>
+            <a href="#certificados">Ver certificados</a>
+        </div>
+    </header>
+
+    <section id="sobre-mi">
+        <h2>Un poco sobre mí</h2>
+        <p>Me encanta programar y diseñar webs que llamen la atención. Siempre estoy aprendiendo algo nuevo para mejorar. Mi objetivo es combinar código con creatividad para que cada proyecto tenga una personalidad única.</p>
+    </section>
+
+    <section id="certificados">
+        <h2>Mis certificados</h2>
+        <div class="certificados">
+            <img src="certificado.jpg" alt="Certificado 1">
+            <img src="certi2.png" alt="Certificado 2">
+            <img src="simposio.png" alt="Certificado 3">
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes escribirme a <strong>kathiaamartinezzz@gmail.com</strong> o encontrarme en mis redes sociales.<strong>@kaattmarr</strong></p>
+    </section>
+</body>
+</html>
